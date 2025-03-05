@@ -8,7 +8,9 @@ const api = axios.create({
 
 });
 const sheets ={
-    getEventos:()=>api.get("/evento")
+    getEventos:()=>api.get("/evento"),
+    getAllOrgs:()=>api.get("/org"),
+    getAllIngs:()=>api.get("/ing")
 }
 
 export default sheets;
